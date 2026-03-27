@@ -7,7 +7,7 @@
 
 /* ====== BODY ====== */
 body {
-  background-image: url("images/ChatGPT\ Image\ 26\ mars\ 2026\,\ 12_20_17.png");
+  background-image: url("images/portfolio_background_pro.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,6 +17,15 @@ body {
   overflow-x: hidden;
   animation: fadeInBody 1s ease-in-out;
 }
+
+h1{
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  color: #000;
+  text-align: center;
+}
+
 
 /* Animation apparition du corps */
 @keyframes fadeInBody {
@@ -28,18 +37,6 @@ body {
   }
 }
 
-/* ====== HEADER ====== */
-.header {
-  width: 100%;
-  height: 125px;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  animation: slideDown 1s ease-in-out;
-  position: sticky;
-}
 
 @keyframes slideDown {
   from {
@@ -116,7 +113,7 @@ body {
   text-align: center;
   font-weight: 300;
   line-height: 1.6;
-  color: #fffafa;
+  color: #000000;
   animation: fadeUp 2.5s ease-in-out;
 }
 
@@ -124,7 +121,39 @@ body {
 .logos {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
   animation: fadeUp 3s ease-in-out;
+}
+
+.h2{
+
+  text-shadow: #54a054;
+}
+
+.conteneur-rectangle{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  opacity: 0,5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #000000;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+  
+}
+
+@media(max-width:800px){
+    .conteneur-rectangle{
+        flex-direction: column;
+        align-items: center;
+    }
 }
